@@ -4,6 +4,11 @@ html, body {
 }
 .bloco {
     min-height: 100%;
+    padding-top: 94px;
+}
+/* Colors */
+.blue-logo {
+    background-color: #2dc7d0;
 }
 /* Home */
 .home {
@@ -21,6 +26,40 @@ html, body {
     font-size: 1.2rem;
     line-height: 1.8rem;
 }
+/* Logo */
+.logo_text {
+    font-size:0;
+    margin: 0;
+}
+.logo_img {
+    width: 100px;
+    margin-top: 15px;
+}
+/* Menu */
+.navbar {
+    background-color: transparent;
+}
+.navbar ul a:hover {
+    background-color: transparent;
+    color: #2dc7d0;
+}
+/* Custom */
+nav {
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 94px;
+    line-height: 56px;
+  }
+  nav.nav-extended .nav-wrapper {
+    min-height: 94px;
+    height: auto;
+  }
+  .navbar-fixed {
+    position: absolute;
+    height: 94px;
+    z-index: 997;
+  }
 /* Home Animation */
 @keyframes mudarbg{
     40% {background-image: url('../img/bg2.jpg');}
