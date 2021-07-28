@@ -9,12 +9,20 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Materialize CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" integrity="sha512-lmJhHTutaPnVBnfnZkZt2q0GqZjTPLERTGjPWnxBl0H6gG2tm9vsfOSbFLGTPbKBgOdLHD0+4Ryu1sXh5nA+Gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Custom CSS-->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
     <header>
+        <!--Menu mobile-->
+        <ul class="side-nav" id="menu-mobile">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre a Boa Forma</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Unidades</a></li>
+            <li><a href="">Contatos</a></li>
+        </ul>
         <div class="navbar-fixed">        
         <nav class="navbar z-depth-0">
             <div class="nav-wrapper container">
@@ -27,18 +35,13 @@
                     <li><a href="">Unidades</a></li>
                     <li><a href="">Contatos</a></li>
                 </ul>
-                <ul class="side-nav" id="menu-mobile">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre a Boa Forma</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Unidades</a></li>
-                    <li><a href="">Contatos</a></li>
-                </ul>
-                <a class="button-collapse right"><i class="material-icons" data-activates="menu-mobile" href="#">menu</i></a>
+              
+                <a href="#" data-activates="menu-mobile" class="button-collapse right" ><i class="material-icons" >menu</i></a>
             </div>
         </nav>
-    </div>s
+    </div>
     </header>
+    <!--Home-->
     <section class="home bloco">
 <div class="row container banner">
     <div class="col s12 center">
@@ -51,11 +54,31 @@
 </div>
 </div>
     </section>
-    
+    <!--Sobre-->
+    <section class="sobre bloco">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light">Sobre nós</h2>
+            </div>
+            <div class="col s12 16">
+                <p class="light">A Centro Boa Forma chegou a Itabauna e região trazendo um novo conceito de prevenção, promoção e reabilitação da saúde. Localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários. Suas instalações foram projetadas e equipadas sob medida, dentro dos padões de acessivilidade, para acolher principalmente pessoas com limitações funcionais. O dentro dispõe de uma equipe profissional qualidicada e com experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas. Localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiete confortável e seguro aos seus usuáruos. </p>
+            </div>
+            <div class="col s12 16">
+
+            </div>
+        </div>
+
+    </section>
 <!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Materialize JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+           <!--JavaScript--> 
+           <script>
+               $(document).ready(function(){
+                   // Menu Mobile
+                   $(".button-collapse").sideNav();
+               });
+           </script>
 </body>
 </html>
