@@ -115,6 +115,29 @@ html, body {
 .servicos .btn-horario {
     padding-bottom: 20px;
 }
+/* Unidades */
+.unidades {
+    background-image: url('/img/bg-unidades.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.unidades h2 {
+    font-size: 2rem; color: #fff;
+    text-transform: uppercase;
+}
+.unidades h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #2dc7d0;
+    margin: 15px auto;
+    
+}
+.unidades p {
+    color: #fff;
+    line-height: 1.8rem;
+}
 /* Custom */
 nav {
     color: #fff;
@@ -160,10 +183,15 @@ nav {
   .tabs .tab a:hover, .tabs .tab a.active {
       color: #2dc7d0;
   }
+  .tabs .indicator {
+      background-color: #2dc7d0;
+  }
 
 /* Media */
 @media only screen and (max-width: 480px) {
-   
+   .card-image-horizontal {
+       display: none;
+   }
 }
 @media only screen and (min-width: 601px) {
     .banner {
